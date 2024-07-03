@@ -479,7 +479,7 @@ hr {
 }
 .locations h2 a.country:hover{
     color: #cc0000 !important;
-    letter-spacing: 5px ;
+/*     letter-spacing: 5px ; */
 }
 @media (max-width:991px) {
     .locations h2 a,.locations h2  {
