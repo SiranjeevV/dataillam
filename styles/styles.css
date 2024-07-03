@@ -651,7 +651,7 @@ border-radius: 10px; }
     border:2px solid #EE0000;
     border-radius: 10px; }
 /* subscribe end */
-#india{
+#india1,#india2{
     background-color: #EE0000;
     width:50px !important;
     height:50px !important;
@@ -659,6 +659,23 @@ border-radius: 10px; }
     border-radius: 50px;
     text-align: center;
     border:2px solid #000000;
+    transition: 0.5s ease;
+}
+#india2:hover{
+    background-color: #000000;
+    border-radius: 20px;
+    border:2px solid #EE0000;
+}
+#india1:hover{
+    background-color: #000000;
+    border-radius: 20px;
+    border:2px solid #EE0000;
+}
+#india1,#india2:hover i{
+    color:#EE0000;
+}
+#india1:hover i{
+    color:#EE0000;
 
 }
 .contents {
@@ -728,7 +745,7 @@ border-radius: 10px; }
     margin: 0;
     padding: 0;
 }
-#india a{
+#india1 i,#india2 i{
     color: #000000;
 }
 /* main end  */
