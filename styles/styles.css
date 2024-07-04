@@ -800,7 +800,7 @@ border-radius: 15px;
 	position: relative;
 	background-position: left;
   background-size: 0% 10%;
-  background-image: linear-gradient(cyan, cyan);
+  background-image: linear-gradient(#EE0000, #EE0000);
 	background-repeat: no-repeat;
   transition: background-size .5s;
 	padding: 4px;
