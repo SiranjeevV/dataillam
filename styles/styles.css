@@ -11,6 +11,13 @@
     background: linear-gradient(black,#cc0000,#EE0000);
     border-radius: 50px;
   }
+  
+
+  ::selection{
+    background: #EE0000;
+    color: white;
+  }
+  
 * {
     margin: 0;
     padding: 0;
@@ -149,14 +156,14 @@ hr {
 .navbar .headings .links a {
     font-size: 17px;
     text-decoration: none;
-    color: #EE0000;
+    color: #000000;
     margin-right: 25px;
 }
 .navbar .headings .links a.current{
-    color: #000000;
+    color: #cc0000;
 }
 .navbar .headings .links a:hover {
-    color: #cc0000;
+    color: #EE0000;
 
 }
 
@@ -191,15 +198,15 @@ hr {
     font-size: 22px;
 }
 #navipanel ul li a:hover{
-    color:#000000;} 
+    color:#EE0000;} 
     #navipanel ul li a.current{
 
- color:#000000;}
+ color:#cc0000;}
  
  .list,
 .list li a {
     text-decoration: none;
-    color: #EE0000;
+    color: #000000;
     list-style: none;
     padding-left: 0;
     font-size: 17px;
@@ -287,7 +294,7 @@ hr {
     color: #fff;
 }
 #hero{
-    height:1000px ;
+    height:930px ;
 }
 @media (max-width:991px) {
     .headline {
@@ -340,7 +347,7 @@ hr {
     height: 100%;
     width: 100%;
     /* background: linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, .2) 50%, rgba(0, 0, 0, .2) 100%); */
-    background-color:#0000008b;
+    background-color:#0000005a;
 }
     .cover-wrap {
     position: absolute;
@@ -438,7 +445,7 @@ hr {
   margin-top: 5px;
   height: 2px;
   /* top:0; */
-  left: 100%;
+  left:0;
   position: absolute;
   background: #000000;
   transition: width 0.6s ease 0s, left 0.6s ease 0s;
@@ -479,7 +486,6 @@ hr {
 }
 .locations h2 a.country:hover{
     color: #cc0000 !important;
-/*     letter-spacing: 5px ; */
 }
 @media (max-width:991px) {
     .locations h2 a,.locations h2  {
@@ -799,13 +805,15 @@ border-radius: 15px;
 .highlight {
 	position: relative;
 	background-position: left;
-  background-size: 0% 10%;
-  background-image: linear-gradient(#EE0000, #EE0000);
+  background-size: 0% 100%;
+  color:#000000;
+  background-image: linear-gradient(#EE0000,#EE0000);
 	background-repeat: no-repeat;
-  transition: background-size .5s;
+  transition: all .7s ;
 	padding: 4px;
 }
 
 .in-view .highlight {
+    color: #ffffff;
 	background-size: 100% 100%;
 }
