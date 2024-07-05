@@ -217,7 +217,7 @@ hr {
     height: 40px;
     background-color: transparent;
     margin-top: 0px;
-    cursor: pointer;
+/*     cursor: pointer; */
 }
 
 .toggle:before,
@@ -335,7 +335,7 @@ hr {
 }
 .herotext{
     transition: 0.5s ease;
-    cursor: default;
+/*     cursor: default; */
 }
 .herotext:hover{
     color: #cc0000;
@@ -627,7 +627,7 @@ textarea {
   background:#cc0000;
   border-radius: 0%;
     border:2px solid #EE0000; 
-  cursor:pointer;
+/*   cursor:pointer; */
   color:#fff;
   font-size:24px;
   padding-top:10px;
@@ -641,7 +641,7 @@ textarea {
     background:#000000;
     border-radius: 0%;
       border:2px solid #00000041; 
-    cursor:pointer;
+/*     cursor:pointer; */
     color:#fff;
     font-size:24px;
     padding-top:10px;
@@ -791,7 +791,7 @@ footer{
 
   #backtotop:hover {
     background-color: #cc0000;
-    cursor: pointer;
+/*     cursor: pointer; */
     color:#fff;
 border-radius: 15px;
   }
