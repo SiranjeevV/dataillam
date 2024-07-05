@@ -5,7 +5,6 @@ var navipanel = document.getElementById('navipanel');
         navipanel.classList.toggle("opennav");
         toggle.classList.toggle("clicked");
     }
-document.addEventListener("DOMContentLoaded", function () {
 
     
     window.onscroll = function () { scrollFunction() };
@@ -28,9 +27,19 @@ document.addEventListener("DOMContentLoaded", function () {
             behavior: "smooth"
         });
     });
-   
+    //cursor
+    const cursor=document.querySelector('.cursor');
+document.addEventListener('mousemove', e => {
+    cursor.setAttribute("style","top: "+(e.pageY+0.1) +"px; left: "+(e.pageX-28)+"px; ");
 });
-{
+document.addEventListener('click', e=>{
+    document.querySelector('.cursor-img').classList.add("expand");
+    setTimeout(function(){
+        document.querySelector('.cursor-img').classList.remove("expand")
+    },500);
+});
+ //highlighting effects
+ {
     const elements= document.querySelectorAll(".highlight-effect");
 
     // Define the class name and threshold
@@ -57,7 +66,8 @@ document.addEventListener("DOMContentLoaded", function () {
         // Start observing the current element
         observer.observe(element);
     });
-}
+
+ }
 
 
 
