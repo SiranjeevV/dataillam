@@ -12,6 +12,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body> 
+  <!-- Cursor start -->
+ <div class="cursor " id="cursor" >
+  <span class="glitter"></span>
+  <img class="cursor-img" style="width:100%; height: 100%;" src="./images/row.png" alt="">
+</div>
+<!-- Cursor End -->
     <!-- loader  -->
     <div class=" show center bg-light position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center" id="spinner"> 
 		<div class="loader"><img src= 
@@ -104,7 +110,7 @@
 					<div class="bloghigh">
 		<div class="bloghigh-image">
 			<a href="./article1.html" class="bloghigh-imglink">
-								<img src="https://worldref.co/wp-content/uploads/2020/09/Business-Development-global-b2b-sales..jpg" class="img-fluid bloghigh-img" >
+								<img  src="./images/b.jpg" class="img-fluid bloghigh-img" >
 			</a>
 		</div>
 		<div class="bloghigh-card">
@@ -133,7 +139,7 @@
 					<div class="bloghigh">
 		<div class="bloghigh-image">
 			<a href="./article2.html" class="bloghigh-imglink">
-								<img src="https://www.businesstechweekly.com/wp-content/uploads/2020/05/sme-digital-transformation-strategy-e1623097271613.jpg" class="img-fluid bloghigh-img" >
+								<img src="./images/BS2.jpg" class="img-fluid bloghigh-img" >
 			</a>
 		</div>
 		<div class="bloghigh-card">
@@ -163,7 +169,7 @@
 					<div class="bloghigh">
 		<div class="bloghigh-image">
 			<a href="./article3.html" class="bloghigh-imglink">
-								<img src="https://cdn.prod.website-files.com/6448bf6f064020ce1b2ca19d/661d0c1f4bd786860a20387c_Why%20IDP%20is%20Essential%20for%20CXOs%20Embracing%20Digital%20Transformation.jpg" class="img-fluid bloghigh-img" >
+								<img src="./images/a3.jpg" class="img-fluid bloghigh-img" >
 			</a>
 		</div>
 		<div class="bloghigh-card">
@@ -195,7 +201,7 @@
                         <div class="bloghigh">
             <div class="bloghigh-image">
                 <a href="./article4.html" class="bloghigh-imglink">
-                                    <img src="https://media.licdn.com/dms/image/D4E12AQFq2A20oGRJow/article-cover_image-shrink_720_1280/0/1658693765478?e=1725494400&v=beta&t=a8YQDny2jSHfpMWGlhljeX_Q-KiuuzN0rgxmHQEkiZ4" class="img-fluid bloghigh-img" >
+                                    <img src="./images/a4.jpg" class="img-fluid bloghigh-img" >
                 </a>
             </div>
             <div class="bloghigh-card">
@@ -251,7 +257,7 @@
                   <p class="context  mt-4">Get access to articles and reports, and receive email newsletters and alerts to stay in touch with our latest knowledge development.</p>
               </div>
               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12  mb-5 form" >
-              <form>      
+                <form action="subscribe.php" method="post">      
                   <input name="name" type="text" class="feedback-input" placeholder="Name" />   
                   <input name="email" type="text" class="feedback-input" placeholder="Email" />
                   <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>

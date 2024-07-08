@@ -11,6 +11,12 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     </head>
 <body>
+     <!-- Cursor start -->
+ <div class="cursor " id="cursor" >
+  <span class="glitter"></span>
+  <img class="cursor-img" style="width:100%; height: 100%;" src="./images/row.png" alt="">
+</div>
+<!-- Cursor End -->
      <!-- loader  -->
      <div class=" show center bg-light position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center" id="spinner"> 
 		<div class="loader"><img src= 
@@ -92,7 +98,7 @@
 <!-- main -->
 <!-- hero  -->
 <div style=" height:65vh; width:100%; position: relative;">
-    <img style="width:100%; height:100%" src="https://images.unsplash.com/photo-1491336477066-31156b5e4f35?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" >
+    <img style="width:100%; height:100%; object-fit: cover;" src="./images/BG.jpg" >
  <div class="hero-overlay"></div>
      <div class="cover-wrap">
 		
@@ -111,8 +117,7 @@
 <div class="container w-100 mt-5" style="height:auto;">
     <div class="row " style="height: 100%; width:100% ; ">
         <div class="col-lg-8">
-         <h2 class="heads">Financial performance:</h2>   
-         <p class="context " style="line-height: 30px;">State-of-the-art financial modeling, planning, and capital structure optimization. We also provide CFO and controller capacity.</p>
+         <h2 class="heads pb-0">Financial performance:</h2>   
         </div>
         
 
@@ -134,10 +139,8 @@
   <div class="row " style="height: 100%; width:100% ;">
     <div class="col-lg-12" style="">
 
-  <strong class="fs-5 d-flex justify-content-between align-items-center" >Financial Improvement Case Study: Enhancing Growth and Stability for a B2B Product-
-    Based Company<button class="text-center" style="border:none ;background-color: transparent;" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-    <i class="fa-solid fa-square-plus fs-2"></i> </button></strong>
-    <div class="collapse" id="collapseExample">
+  <strong class="fs-5 d-flex justify-content-between align-items-center" >State-of-the-art financial modeling, planning, and capital structure optimization. We also provide CFO and controller capacity.</strong>
+    <div class="mt-3" id="collapseExample">
     <div class="card card-body container">
       <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
@@ -190,7 +193,35 @@
 </div>
 </div>
 <!-- recent end -->
+<!-- experts start  -->
+<div class="container w-100 mt-5" >
+  <div class="row " style="height: 100%; width:100% ;  ">
+      <div class="col-lg-12">
+       <h2 class="heads">Contact Our Experts</h2>   
+      </div>
+      <div class="row " style="height: 100%; width:100% ; padding-right: 0 !important; justify-content: space-around !important; ">
+        <div class="col-lg-4 col-md-5 mt-3 " style="padding-right: 0 !important;">
+          <img src="./images/DP.jpg" style=" " class=" img-fluid" alt="">
+          <strong class=" fs-4  " >Deepak Singh</strong>
+          <p class="context mt-1">CEO & Founder</p>
+          <p class="mt-3"><a href="https://www.linkedin.com/in/deepak-singh-darren/" class="btn btn-dark" >Contact on <i class="fa-brands fa-linkedin mx-1"></i></a>
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-5 mt-3" style="padding-right: 0 !important;">
+          <img src="./images/mom (1).jpg" class=" img-fluid" alt="">
+          <strong class=" fs-4  " >Vasanthi</strong>
+          <!-- <p class="context mt-1">Co-Founder and Director</p>
+          <p class="mt-3"><a href="https://www.linkedin.com/in/prashanthgandhidoss/" class="btn btn-dark" >Contact on <i class="fa-brands fa-linkedin mx-1"></i></a> -->
+          </p>
+        </div>
+       
+</div>
+<hr>
+      
 
+  </div>
+  </div>
+<!-- experts end  -->
 
 <!-- subscribe us -->
 <div class="subs mt-5" style="width:100%; height:auto;">
@@ -212,7 +243,7 @@
                               <p class="context  mt-4">Get access to articles and reports, and receive email newsletters and alerts to stay in touch with our latest knowledge development.</p>
                             </div>
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12  mb-5 form" >
-          <form>      
+            <form action="subscribe.php" method="post">      
               <input name="name" type="text" class="feedback-input" placeholder="Name" />   
               <input name="email" type="text" class="feedback-input" placeholder="Email" />
               <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
