@@ -38,6 +38,14 @@ document.addEventListener('click', e=>{
         document.querySelector('.cursor-img').classList.remove("expand")
     },500);
 });
+let timeout;
+document.addEventListener('mousemove', () => {
+  clearTimeout(timeout); // Clear the existing timeout
+  timeout = setTimeout(() => {
+    cursor.style.display = 'none'; // Hide the cursor after 2 seconds of inactivity (adjust as needed)
+  }, 2000); // 2000 milliseconds (2 seconds)
+});
+
  //highlighting effects
  {
     const elements= document.querySelectorAll(".highlight-effect");
@@ -79,8 +87,8 @@ document.addEventListener('click', e=>{
         setTimeout(function () {
             // if ($('#spinner').length > 0) {
                 $('#spinner').removeClass('show');
-            // }
-        }, 1500);
+                // }
+        }, 1800);
     };
     spinner(0);
 })(jQuery);  

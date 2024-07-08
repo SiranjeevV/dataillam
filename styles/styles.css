@@ -36,11 +36,10 @@ a,.btn,button,[type='submit']{
 .cursor{
     width:25px;
     height:25px;
-   position: absolute;
+   position:absolute;
     z-index: 100000000;
     transition-duration: 0.1s;
     transition-timing-function:ease-out;
-
     pointer-events: none;
 }
 .cursor-img{
@@ -55,7 +54,7 @@ a,.btn,button,[type='submit']{
   
   
 .loader  {
-    animation: rotate 1.2s infinite;  
+    animation: rotate 1.5s infinite;  
     height: 50px;
     width: 50px;
   }
@@ -69,13 +68,13 @@ a,.btn,button,[type='submit']{
     width: 20px;
   }
   .loader:before {
-    animation: ball1 1.2s infinite;  
+    animation: ball1 1.5s infinite;  
     background-color: #cc0000;
     box-shadow: 30px 0 0 #000000;
     margin-bottom: 10px;
   }
   .loader:after {
-    animation: ball2 1.2s infinite; 
+    animation: ball2 1.5s infinite; 
     background-color: #EE0000;
     box-shadow: 30px 0 0 #EEEEEE;
   }
@@ -115,17 +114,17 @@ a,.btn,button,[type='submit']{
   
   @keyframes ball2 {
     0% {
-      box-shadow: 30px 0 0 gray;
+      box-shadow: 30px 0 0 #EEEEEE;
     }
     50% {
-      box-shadow: 0 0 0 gray;
+      box-shadow: 0 0 0 #EEEEEE;
       margin-top: -20px;
       -webkit-transform: translate(15px,15px);
       -moz-transform: translate(15px, 15px);
       border-radius: 50%;
     }
     100% {
-      box-shadow: 30px 0 0 gray;
+      box-shadow: 30px 0 0 #EEEEEE;
       margin-top: 0;
     }
   }
