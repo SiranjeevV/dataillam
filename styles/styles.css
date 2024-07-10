@@ -340,7 +340,7 @@ hr {
     background: #EE0000;
 
 }
-@media(max-width:1250px) {
+@media(max-width:1400px) {
     .navbar .headings .links a {
         margin-right:10px;
     }
