@@ -340,13 +340,17 @@ hr {
     background: #EE0000;
 
 }
-
+@media(max-width:1250px) {
+    .navbar .headings .links a {
+        margin-right:10px;
+    }
+    .navbar .headings{
+        margin-right:5px;
+    }
+}
 @media(max-width:1150px) {
     .navbar .headings .links a {
         display: none;
-    }
-    .navbar .headings{
-    margin-right: 5px;
     }
 
     .navbar .logo .logo2 {
