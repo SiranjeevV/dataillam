@@ -891,7 +891,6 @@ border-radius: 15px;
   background-image: linear-gradient(#EE0000,#EE0000);
 	background-repeat: no-repeat;
   transition: all .7s ;
-	padding: 1px;
 }
 
 .in-view .highlight {
