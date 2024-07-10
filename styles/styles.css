@@ -345,6 +345,9 @@ hr {
     .navbar .headings .links a {
         display: none;
     }
+    .navbar .headings{
+    margin-right: 10px;
+    }
 
     .navbar .logo .logo2 {
         /* display: none; */
