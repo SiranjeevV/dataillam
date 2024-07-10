@@ -30,7 +30,7 @@ var navipanel = document.getElementById('navipanel');
     //cursor
     const cursor=document.querySelector('.cursor');
 document.addEventListener('mousemove', e => {
-    cursor.setAttribute("style","top: "+(e.pageY+0.1) +"px; left: "+(e.pageX-28)+"px; ");
+    cursor.setAttribute("style","top: "+(e.pageY-1) +"px; left: "+(e.pageX-24)+"px; ");
 });
 document.addEventListener('click', e=>{
     document.querySelector('.cursor-img').classList.add("expand");
@@ -49,9 +49,36 @@ document.addEventListener('mousemove', () => {
  //highlighting effects
  {
     const elements= document.querySelectorAll(".highlight-effect");
-
     // Define the class name and threshold
     const className = "in-view";
+    const threshold = 1;
+    
+    // Loop through each element and create an observer for it
+    elements.forEach(element => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        element.classList.add(className);
+                        return;
+                    }
+                    element.classList.remove(className);
+                });
+            },
+            {
+                threshold: threshold
+            }
+        );
+    
+        // Start observing the current element
+        observer.observe(element);
+    });
+
+ }
+ {
+    const elements= document.querySelectorAll(".headlines");
+    // Define the class name and threshold
+    const className = "appear";
     const threshold = 1;
     
     // Loop through each element and create an observer for it

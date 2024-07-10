@@ -1,24 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Search</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #ffff;
-            padding: 20px;
-        }
-     
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>::after Pseudo-element Example</title>
+<style>
+    .box {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        background-color: lightblue;
+    }
+    .box::after {
+        content: '';
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        border-radius: 50%;
+    }
+</style>
 </head>
 <body>
-    <div class="container loader"></div>
-   
+    <div class="box"></div>
+    <button onclick="changePseudoElementColor()">Change ::after Color</button>
 
     <script>
+        function changePseudoElementColor() {
+            // Get the pseudo-element style
+            let box = document.querySelector('.box');
+            let afterElement = window.getComputedStyle(box, '::after');
 
+            // Modify the pseudo-element style
+            box.style.setProperty('--after-bg-color', 'green');
+        }
     </script>
 </body>
 </html>

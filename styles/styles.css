@@ -22,7 +22,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Rakkas';
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body {
@@ -38,7 +38,7 @@ a,.btn,button,[type='submit']{
     height:25px;
    position:absolute;
     z-index: 100000000;
-    transition-duration: 0.1s;
+    transition-duration: 0s;
     transition-timing-function:ease-out;
     pointer-events: none;
 }
@@ -435,7 +435,25 @@ hr {
     font-size: 30px;
     color: #ffffff;
 }
+.headlines{
+    width: fit-content !important;
+}
 
+.headlines:after{
+    background: none repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
+    margin-top: 3px;
+    height: 2px;
+    width:0;
+    position: relative;
+    background: #EE0000;
+    transition: width 0.6s ease 0s, left 0.6s ease 0s;
+
+}
+.headlines.appear::after{
+    width:100%;
+}
 
 
 .heads{
@@ -500,13 +518,12 @@ hr {
   display: inline-block;
   position: relative;
 }
-.feature-list-item h2 :after {    
+.feature-list-item h2 a:after {    
   background: none repeat scroll 0 0 transparent;
   content: "";
   display: block;
   margin-top: 5px;
   height: 1px;
-  /* top:0; */
   left:0;
   position: absolute;
   background: #000000;
@@ -699,11 +716,11 @@ textarea {
   font-weight:700;
 }
 [type="reset"]{
+    cursor: none !important;
     width: 100%;
     background:#000000;
     border-radius: 0%;
       border:2px solid #00000041; 
-    cursor:none;
     color:#fff;
     font-size:24px;
     padding-top:10px;
@@ -865,6 +882,8 @@ border-radius: 15px;
 /* backtotop end */
 /* highlight */
 .highlight {
+    text-transform:uppercase;
+    font-weight: 700;
 	position: relative;
 	background-position: left;
   background-size: 0% 100%;
@@ -872,10 +891,19 @@ border-radius: 15px;
   background-image: linear-gradient(#EE0000,#EE0000);
 	background-repeat: no-repeat;
   transition: all .7s ;
-	padding: 4px;
+	padding: 1px;
 }
 
 .in-view .highlight {
     color: #ffffff;
 	background-size: 100% 100%;
+}
+.inview .highlight{
+    color: #ffffff;
+	background-size: 100% 100%;
+}
+@media (max-width:700px){
+    .cursor{
+        display:none;
+    }
 }
