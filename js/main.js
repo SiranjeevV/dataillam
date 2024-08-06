@@ -103,6 +103,48 @@ document.addEventListener('mousemove', () => {
     });
 
  }
+     {
+      document.getElementById('registration-form').addEventListener('submit', function (event) {
+              event.preventDefault();
+            openpop();
+            
+
+            // setTimeout(() => {
+            //     event.target.submit();
+            // },  2000); 
+        });
+
+        function openpop() {
+            document.getElementById('popup').classList.add('popup1');
+            const body = document.body;
+
+        Object.assign(body.style, {
+            overflow:'hidden'
+        });
+        }
+
+        const form = document.getElementById('registration-form');
+        const submitButton = document.getElementById('submit-button');
+        const requiredFields = form.querySelectorAll('[required]');
+        const message = document.getElementById('msg');
+;
+
+        const emailField = document.getElementById('email');
+
+        function checkRequiredFields() {
+           
+            const allFilled = Array.from(requiredFields).every(field => field.value.trim() !== '');
+            const messageFilled=message.value !== '';
+            const emailValid = emailField.checkValidity();
+            submitButton.disabled = !(allFilled && messageFilled && emailValid);
+        }
+
+        requiredFields.forEach(field => {
+            field.addEventListener('input', checkRequiredFields);
+        });
+
+        checkRequiredFields();
+    }
 
 
 
