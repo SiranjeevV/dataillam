@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<style>
+            #arrow {
+            text-decoration: none;
+            color: inherit; 
+            font-size: x-large;
+        }
+
+        /* Specific style for the icon */
+        #arrow .fa-arrow-left {
+            color: #ffffff; /* Set to desired color, e.g., black */
+        }
+
+        .form-floating{
+            margin-left: 20%;
+            margin-right: 20%;
+                    
+
+        }
+
+        .input-container {
+    position: relative;
+    width: 100%; 
+}
+
+.input-container i {
+    position: absolute;
+    top: 50%;
+    left: 10px; 
+    transform: translateY(-50%);
+    color: #000; /* Adjust icon color */
+}
+
+.input-container .form-control {
+    padding-left: 40px;
+    padding-right: 10px; 
+    height: 40px; 
+    border: 1px solid #000; 
+    background: transparent; 
+    box-sizing: border-box;
+    width: 100%; 
+}
+
+.skill-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .skill {
+            margin-right: 10px;
+        }
+        .delete-btn {
+            background-color: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .delete-btn:hover {
+            background-color: rgb(0, 0, 0);
+        }
+        .ggg,#submit {
+            background-color: #EE0000; /* Green */
+            border: none;
+            color: white;
+            padding: 5px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 2s ease;
+        }
+        .ggg:hover, #submit:hover {
+            background-color: #000000; /* Darker green */
+        }
+
+        .input-box {
+            margin-bottom: 20px;
+        }
+        .input-box label {
+            font-size: 16px;
+            margin-right: 10px;
+
+        }
+        .input-box label i {
+            margin-right: 5px;
+            color: #4CAF50;
+        }
+        
+        .input-box input[type="file"] {
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .form-container {
+            /* background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+            width: 300px;
+            /* text-align: center; */
+        }
+
+        /* .form-container p {
+            font-size: 18px;
+            color: #333333;
+            margin-bottom: 10px;
+        } */
+
+        .form-container select {
+            width: 100%;
+            padding: 10px;
+            /* margin-top: 10px; */
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            background-color: #ffffff;
+            font-size: 16px;
+            color: #333333;
+        }
+
+        .form-container select:focus {
+            outline: none;
+            border-color: #007BFF;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+        .fade-in-left {
+            z-index: 1;
+            opacity: 1;
+            transform: translateX(-100%);
+            animation: fadeInLeft 1s forwards;
+        }
+
+        @keyframes fadeInLeft {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .fade-in-left1 {
+            overflow: hidden;
+            z-index: 0;
+            opacity: 0;
+            transition-delay: 1s;
+            transform: translateX(-200%);
+            animation: fadeInLeft 1.5s forwards;
+        }
+
+        @keyframes fadeInLeft1 {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+               
+            }
+        }
+        
+</style>
+<body style="overflow-x: hidden;">
+
+   <div class="row">
+      
+      <div class="col-sm-6 fade-in-left" style="background-color: rgb(232, 21, 21);">
+      <div class="logo">
+        <div >
+            <br><a href="./main.html"><img class="logo1" src="./images/main logo.png" alt="logo" style="padding-top: 30px;padding-left: 30px;"></a>
+        </div><br><br><br>
+            <!-- <a href="./main.html"><img class="logo2" src="./images/Group 1261155019.png" alt="logo"></a> -->
+           
+           
+             
+                    <!-- <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                        <h1 class="display-5" style="color: #ffffff;">We're Hiring</h1>
+                        <p class="text-light fs-5 mb-5">Explore Our Job Openings</p>
+                    </div> -->
+                   
+                        <!-- <div class="col-lg-12 col-md-12 wow fadeInUp" data-wow-delay="0.1s" style="background-color: rgb(85, 85, 85);"> -->
+
+                            <div class="service-item p-5">
+                                <img class="img-fluid mb-4" src="img/icon-7.png" alt="">
+                                 <a href="careers.html" id="arrow"><i class="fa-solid fa-arrow-left"></i></a> <br><br>
+                                <h4 class="mb-3" style="color: #F2F8FE;font-size: xx-large;">WEB APPLICATION DEVELOPER
+                                </h4><br>
+                        
+        
+                                      <h5 style="color: #F2F8FE;font-size: x-large;">Resposibilities</h5><br>
+        
+                                <p style="color: #F2F8FE;"> 1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi id totam, atque maiores fugit reiciendis adipisci ratione nobis et labore.
+                                    <br><br>
+                                    2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis optio suscipit, corrupti tenetur unde dicta cum libero deleniti pariatur?
+                                      <br><br>
+                                    3. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium adipisci veniam consequatur, numquam quisquam molestias inventore ullam commodi officia.
+                                                        <br><br>
+                                    4. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, fuga?
+        
+                                     <br><br>
+                                   5. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque fuga ipsam error in dolore illum.
+                                   <br><br>
+                                    6. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam ipsum dolor voluptatem neque recusandae doloremque. <br><br>
+                                    7. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, eligendi!
+                                        <br><br><br><br><br>
+                            
+        
+                                <!-- <a href="career_contact.html">Apply Here <i class="fa fa-arrow-right ms-2"></i></a> -->
+                            </div>
+                        <!-- </div> -->
+                    </div>
+        </div>
+
+        <div class="col-sm-6 fade-in-left1">
+            <form action="submit_form.php" method="POST" enctype="multipart/form-data">
+                <br><br><br>
+    
+                <div class="form-floating">
+                    <div class="input-container">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                </div><br>
+    
+                <div class="form-floating">
+                    <div class="input-container">
+                        <i class="fa-solid fa-phone"></i>
+                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone" required>
+                    </div>
+                </div><br>
+                   
+                <div style="margin-left: 20%;">
+                    <p>What kind of an opportunity are you looking for?</p>
+                    <input type="radio" id="fulltime" name="opportunity" value="fulltime">
+                    <label for="fulltime">FULL TIME</label><br>
+                    <input type="radio" id="consultant" name="opportunity" value="consultant">
+                    <label for="consultant">CONSULTANT</label><br><br>
+    
+                    <label for="skill-input">Mention your top 5 skills</label><br>
+                    <input type="text" id="skill-input" name="skills" placeholder="Enter your skills" style="padding: 4px; border-radius: 3px;">
+                    <button class="ggg" type="button" onclick="addSkill()">Add</button>
+                    <div id="skills-list"></div><br>
+    
+                    <p>Total years of Experience</p>
+                    <input type="radio" id="exp1" name="experience" value="1-3">
+                    <label for="exp1">1 - 3</label><br>
+                    <input type="radio" id="exp2" name="experience" value="3-5">
+                    <label for="exp2">3 - 5</label><br>  
+                    <input type="radio" id="exp3" name="experience" value="5+">
+                    <label for="exp3">5+</label><br><br>
+               
+                    <div class="form-container">
+                        <p>How did you hear about us?</p>
+                        <select name="source" id="topic">
+                            <option value="LinkedIn" selected="selected">LinkedIn</option>
+                            <option value="naukri">Naukri</option>
+                            <option value="referral">Referral</option>
+                            <option value="social_media">Social Media</option>
+                        </select>
+                    </div><br>
+                    
+                    <label for="message">Introduce Yourself in a few words</label><br>
+                    <textarea class="bg-black border border-black" name="message" placeholder="Leave a message here" id="message" style="height: 150px; width: 60%;" required></textarea>
+                    
+                    <br><br>
+                
+                    <div class="input-box">
+                        <label for="cv_upload">Upload your CV (.pdf, .doc, .docx)</label><br>
+                        <input type="file" id="cv_upload" name="cv_upload" accept=".pdf, .doc, .docx" required>
+                    </div><br>
+                    <input type="submit" value="Submit" id="submit" style="padding: 2%;"><br><br><br>
+                </div>
+            </form>
+        </div>
+      </div>
+
+<script>
+     function addSkill() {
+            const skillInput = document.getElementById('skill-input');
+            const skillValue = skillInput.value.trim();
+            
+            if (skillValue === '') {
+                alert('Please enter a skill');
+                return;
+            }
+            
+            const skillContainer = document.createElement('div');
+            skillContainer.className = 'skill-container';
+
+            const skill = document.createElement('span');
+            skill.className = 'skill';
+            skill.textContent = skillValue;
+
+            const deleteBtn = document.createElement('button');
+            deleteBtn.className = 'delete-btn';
+            deleteBtn.textContent = 'x';
+            deleteBtn.onclick = function() {
+                skillContainer.remove();
+            };
+
+            skillContainer.appendChild(skill);
+            skillContainer.appendChild(deleteBtn);
+
+            document.getElementById('skills-list').appendChild(skillContainer);
+
+            
+            skillInput.value = '';
+        }
+</script>
+    
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+
+</body>
+</html>

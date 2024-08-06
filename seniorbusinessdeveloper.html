@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATAiLLAM</title>
+    <link rel="icon" type="image/png" href="./images/title logo.png">
+    <link href="./styles/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            overflow-y: scroll;
+        }
+
+        .careers {
+            width: 100%;
+            height: 100%;
+            cursor: auto;
+        }
+
+        .description {
+            overflow: hidden !important;
+            position: fixed;
+            z-index: 2;
+            background-color: #ffffff;
+            left: 0;
+            width: 50%;
+            height: 100% !important;
+            animation: anim 0.5s ease;
+            transform: translateX(0%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .application-form {
+            position: absolute;
+            z-index: 1;
+            right: 0;
+            width: 50%;
+            height: auto;
+            animation: anim1 1s ease;
+
+            background-color: #cc0000;
+            transform: translateX(0%);
+            overflow-y: scroll !important;
+
+
+        }
+
+        @keyframes anim {
+
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(0%);
+            }
+
+        }
+
+        @keyframes anim1 {
+            0% {
+                transform: translateX(-200%);
+            }
+
+            100% {
+                transform: translate(0%);
+            }
+
+        }
+
+        .jobdesp ol li {
+            line-height: 20px;
+
+        }
+
+        @media (max-width:1050px) {
+            .careersform {
+                width: 100% !important;
+            }
+
+            body {
+                overflow-y: scroll;
+            }
+
+            /* .left{
+            padding-top:50px;
+        }   */
+            .description {
+                width: 100%;
+                position: relative;
+                height: 100%;
+
+            }
+
+            .application-form {
+                width: 100%;
+                position: relative;
+            }
+        }
+
+        @media(max-width:700px) {
+            /* .left{
+            padding-top:35px;
+        }   */
+        }
+
+        .jobdesp .heads {
+            color: #000000;
+        }
+
+        .context {
+            color: #000000;
+            font-weight: 600;
+        }
+
+        .left::after {
+            content: '';
+            background-image: url('./images/elementbottom.png');
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            top: -85px;
+            left: -85px;
+            display: block;
+            background-size: contain;
+            z-index: -2;
+            /* transform: rotateZ(45deg); */
+
+
+        }
+
+        /* .left::before{
+            content:'';
+            background-image: url('./images/elementbottom.png');
+            width:250px;
+            height:250px;
+            position: absolute;
+            top:-145px;
+            left:-145px;
+            display: block;
+            background-size: contain;
+            z-index: -2;
+            transform: rotateZ(45deg);
+
+
+        } */
+        .careersform {
+            backdrop-filter: blur(10px);
+            background-color: #0000005c;
+            height: auto;
+            width: auto;
+            padding: 15px;
+            border-radius: 20px;
+        }
+
+        .careersform .heads {
+            color: #ffffff !important;
+
+        }
+
+        strong,
+        label {
+            color: #ffffff !important;
+
+        }
+
+        .input-area {
+            width: 100%;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 90%;
+        }
+
+        [type='text'],
+        [type='email'],
+        select,
+        option,
+        textarea,
+        input {
+            border-radius: 10px;
+            background-color: #00000058;
+            padding: 8px;
+            border-color: transparent;
+            color: #ffffff;
+            box-shadow: none;
+        }
+
+        ::placeholder {
+            color: rgba(255, 255, 255, 0.668);
+            opacity: 1;
+        }
+
+        [type='radio'] {
+            width: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="careers">
+        <div class="description">
+            <!-- <img style="position: absolute;  width:250px; height:250px; bottom: -80px; right:-80px" src="./images/elementbottom.png" alt=""> -->
+            <div class="left d-flex px-4" style="height:auto; width: 100%;">
+                <div
+                    style=" position: fixed; width:100%; height:fit-content; top:4%; right:0%; background-color: #ffffff;">
+                    <img src="./images/main logo.png"
+                        style="width:100px; padding: 3px; height:100px; top:0%;right:4%; position: absolute;" alt="">
+                </div>
+
+                <div class="jobdesp " style="margin-top:15%">
+
+                    <h2 class="heads fs-2 pb-2 "><a href="./joindataillam.html " class="heads fs-4  me-3 "
+                            style=" cursor: pointer !important; text-decoration: none; border-radius: 50%;"><i
+                                class="fa-solid fa-arrow-left"></i></a>Senior Business Developer</h2>
+                    <h4 class="heads fs-3 pb-1">Job Description</h4>
+                    <ol>
+                        <li class="context fs-6 mt-4">Conducting research to identify new business opportunities and
+                            market trends.
+                        </li>
+                        <li class="context fs-6 mt-4">Developing and implementing strategies to achieve business growth
+                            and company goals.
+                        </li>
+                        <li class="context fs-6 mt-4">Establishing and maintaining relationships with key clients,
+                            partners, and stakeholders.
+                        </li>
+                        <li class="context fs-6 mt-4">Working with sales and marketing teams to create and execute
+                            campaigns that drive business growth.
+                        </li>
+                        <li class="context fs-6 mt-4">Identifying and pursuing new leads to expand the company's
+                            customer base.
+                        </li>
+                        <li class="context fs-6 mt-4">Negotiating contracts and closing deals to secure new business
+                            opportunities.
+                        </li>
+
+
+
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="application-form d-flex align-items-center justify-content-center">
+            <div class="careersform my-5" style="width:80%">
+                <h2 class="heads fs-2 pb-0 mb-0 w-100 m" style="text-align: center">Application Form</h2>
+                <form action="careers.php" method="post" enctype="multipart/form-data" class="mt-4">
+                    <input type="hidden" name="role" value="Senior_Business_Developer">
+
+                    <div class="input-area mb-3">
+                        <strong class="mb-4"><i class="fa-solid fa-user mx-2"></i>Name:</strong>
+                        <br>
+                        <input type="text" id="name" placeholder="Enter your name" class="my-2" required>
+                    </div>
+                    <div class="input-area mb-3">
+                        <strong class="mb-4"><i class="fa-solid fa-envelope mx-2"></i>E-mail:</strong>
+                        <br>
+                        <input type="email" id="name" placeholder="Enter your email" class="my-2" required>
+                    </div>
+                    <div class="input-area mb-3">
+                        <strong class="mb-3">What type of job you are looking for ?</strong>
+                        <br>
+                        <input type="radio" id="full" class="my-2" name="fav_language" value="HTML">
+                        <label for="full">Full time</label><br>
+                        <input type="radio" class=" mb-2" id="consult" class="my-2" name="fav_language" value="CSS">
+                        <label for="consult">Consultant</label>
+                    </div>
+                    <div class="input-area mb-3">
+                        <strong class="mb-3">Total years of Experience:</strong>
+                        <br>
+
+                        <input type="radio" id="one" class="my-2" name="fav_language" value="HTML">
+                        <label for="one">Fresher</label><br>
+                        <input type="radio" id="two" class="my-2" name="fav_language" value="HTML">
+                        <label for="two">1-3 years</label><br>
+                        <input type="radio" class="mb-2" id="three" class="my-2" name="fav_language" value="CSS">
+                        <label for="three">3+ years</label>
+                    </div>
+                    <div class="input-area mb-3">
+                        <strong class="mb-3"><i class="fa-solid fa-briefcase mx-2"></i>How did you hear about us?
+                        </strong>
+                        <br>
+                        <select class="my-2" name="" style="" required>
+                            <option value="none">Please select an option</option>
+                            <option value="Linked In">Linked In</option>
+                            <option value="Instagram">Instagram</option>
+                            <option value="Google">Dataillam webpage</option>
+                            <option value="Others">Others</option>
+                        </select>
+                    </div>
+                    <div class="input-area mb-3">
+                        <strong class="mb-3"><i class="fa-solid fa-address-card mx-2"></i>About Yourself:</strong>
+                        <br>
+                        <textarea name="About" class=" my-2" id="about" cols="30" rows="20"
+                            placeholder="Message"></textarea>
+                    </div>
+                    <div class="input-area mb-3">
+                        <strong class="mb-3">Add your Resume</strong>
+                        <br>
+                        <input type="file" id="file" class="my-2" name="mail_files" accept=".pdf, .doc, .docx" required>
+                    </div>
+                    <div class="input-area mb-3">
+                        <input type="submit" class="btn btn-dark text-light"
+                            style="width:200px; background-color: #000000; cursor: pointer !important;" value="submit">
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- <script src='./js/main.js'></script> -->
+    <!-- <script src="js/wow.min.js"></script> -->
+</body>
+
+</html>

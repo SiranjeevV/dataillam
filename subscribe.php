@@ -1,4 +1,3 @@
-
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Collect form data
@@ -20,14 +19,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Set headers
     $headers = "From: $email";
 
-    // Send email
-    if (mail($to, $subject, $message, $headers)) {
-        echo "Thank you for your comment!";
+    if (mail($to, $subject, $message, $headers)) { // Changed $body to $message
+        // Email sent successfully, redirect to thank you page
+        header('Location: index.html');
+        exit; // Ensure script stops execution after redirection
     } else {
-        echo "Sorry, there was an error sending your message.";
+        // Email sending failed
+        echo "Failed to send email. Please try again later.";
     }
 } else {
     // If accessed directly, redirect back to the form
     header("Location: index.html");
 }
 ?>
+

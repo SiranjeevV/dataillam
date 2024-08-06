@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = $_POST['message'];
 
     // Compose email content
-    $to = "your-email@example.com"; // Replace with your email address
+    $to = "siranjeev@iqtechmax.com"; // Replace with your email address
     $subject = "New Contact Form Submission";
     $message_body = "First Name: $first_name\n";
     $message_body .= "Last Name: $last_name\n";
